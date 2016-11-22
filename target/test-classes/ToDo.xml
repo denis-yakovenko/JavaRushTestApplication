@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<toDo id="1"	TEXT="Simple task: get the Moon from the sky"	DONE="0" />
+	<toDo id="2"	TEXT="Completed task: come into the world"	DONE="1" />
+</dataset>

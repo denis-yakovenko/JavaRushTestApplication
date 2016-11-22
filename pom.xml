@@ -21,6 +21,7 @@
 	</properties>
 
 	<dependencies>
+		<!-- Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
@@ -47,12 +48,14 @@
 			<version>${springframework.version}</version>
 		</dependency>
 
+		<!-- Hibernate -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>${hibernate.version}</version>
 		</dependency>
 
+		<!-- jsr303 validation -->
 		<dependency>
 			<groupId>javax.validation</groupId>
 			<artifactId>validation-api</artifactId>
@@ -64,12 +67,28 @@
 			<version>5.1.3.Final</version>
 		</dependency>
 
+		<!-- MySQL -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>${mysql.version}</version>
 		</dependency>
 
+      	<!-- Joda-Time -->		
+		<dependency>
+  			<groupId>joda-time</groupId>
+  			<artifactId>joda-time</artifactId>
+  			<version>${joda-time.version}</version>
+  		</dependency>
+		
+		<!-- To map JodaTime with database type -->  		
+  		<dependency>
+    		<groupId>org.jadira.usertype</groupId>
+    		<artifactId>usertype.core</artifactId>
+    		<version>3.0.0.CR1</version>
+		</dependency>
+
+		<!-- Servlet+JSP+JSTL -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -87,6 +106,37 @@
 		</dependency>
 		
 		
+		<!-- Testing dependencies -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${springframework.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${testng.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>${mockito.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>${h2.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>dbunit</groupId>
+			<artifactId>dbunit</artifactId>
+			<version>${dbunit.version}</version>
+			<scope>test</scope>
+		</dependency>
 		
 	</dependencies>
 
@@ -101,6 +151,17 @@
 						<warSourceDirectory>src/main/webapp</warSourceDirectory>
 						<warName>TestApp</warName>
 						<failOnMissingWebXml>false</failOnMissingWebXml>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.tomcat.maven</groupId>
+					<artifactId>tomcat7-maven-plugin</artifactId>
+					<version>2.2</version>
+					<configuration>  
+						<url>http://localhost:8080/manager/text</url>  
+						<server>TomcatServer</server>
+						<username>tomcat</username>  
+						<password>tomcat</password>   
 					</configuration>
 				</plugin>
 			</plugins>

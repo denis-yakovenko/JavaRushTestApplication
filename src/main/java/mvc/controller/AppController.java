@@ -3,6 +3,7 @@ package mvc.controller;
 import mvc.model.ToDo;
 import mvc.service.ToDoService;
 import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
@@ -19,6 +20,9 @@ public class AppController {
 	@Autowired
 	ToDoService service;
 	
+	/*@Autowired
+	MessageSource messageSource;*/
+
 	@RequestMapping(value = { "/", "/list" }, method = RequestMethod.GET)
 	public String listToDos(ModelMap model) {
 		List<ToDo> toDos = service.findAllToDos();
@@ -54,6 +58,8 @@ public class AppController {
 			return "registration";
 		}
 		service.saveToDo(toDo);
+		//model.addAttribute("success", "ToDo " + toDo.getText() + " registered successfully");
+		//return "success";
 		return "redirect:/list";
 	}
 
@@ -72,6 +78,8 @@ public class AppController {
 			return "registration";
 		}
 		service.updateToDo(toDo);
+		//model.addAttribute("success", "ToDo " + toDo.getText()	+ " updated successfully");
+		//return "success";
 		return "redirect:/list";
 	}
 

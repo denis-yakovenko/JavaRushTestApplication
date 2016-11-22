@@ -24,6 +24,18 @@ public class HibernateConfiguration {
     @Autowired
     private Environment environment;
 
+    /*@Autowired
+    private ResourceLoader resourceLoader;*/
+
+    /*@PostConstruct
+    protected void initialize() {
+        //System.out.println("!!!!!!!!!!!!!!!!!!!!!!initialize!!!!!!!!!!!!!!!!!!!");
+
+        ResourceDatabasePopulator populator = new ResourceDatabasePopulator();
+        populator.addScript(resourceLoader.getResource(environment.getProperty("batch.schema.script")));
+        populator.setContinueOnError(false);
+        DatabasePopulatorUtils.execute(populator, dataSource());
+    }*/
 
     @Bean
     public LocalSessionFactoryBean sessionFactory() {

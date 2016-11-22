@@ -1,0 +1,5 @@
+mvc\controller\AppControllerTest.class
+mvc\configuration\HibernateTestConfiguration.class
+mvc\dao\EntityDaoImplTest.class
+mvc\dao\ToDoDaoImplTest.class
+mvc\service\ToDoServiceImplTest.class

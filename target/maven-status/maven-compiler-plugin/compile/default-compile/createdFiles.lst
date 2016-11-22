@@ -1,0 +1,10 @@
+mvc\dao\AbstractDao.class
+mvc\model\ToDo.class
+mvc\configuration\AppConfig.class
+mvc\controller\AppController.class
+mvc\configuration\HibernateConfiguration.class
+mvc\dao\ToDoDaoImpl.class
+mvc\service\ToDoService.class
+mvc\configuration\AppInitializer.class
+mvc\dao\ToDoDao.class
+mvc\service\ToDoServiceImpl.class

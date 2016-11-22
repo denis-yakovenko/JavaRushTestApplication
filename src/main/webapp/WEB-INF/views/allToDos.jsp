@@ -5,6 +5,7 @@
 <% pageContext.setAttribute("newLineChar", "\n"); %>
 <html>
 <head>
+    <!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">-->
 	<title>ToDo</title>
 	<style>
         tr:first-child{

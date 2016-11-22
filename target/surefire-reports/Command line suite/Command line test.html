@@ -1,0 +1,184 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>21/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Nov 22 14:54:48 EET 2016</td>
+</tr>
+<tr><td>Total time:</td><td>33 seconds (33565 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='mvc.controller.AppControllerTest.deleteToDo()'><b>deleteToDo</b><br>Test class: mvc.controller.AppControllerTest</td>
+<td></td>
+<td>0</td>
+<td>mvc.controller.AppControllerTest@64729b1e</td></tr>
+<tr>
+<td title='mvc.dao.ToDoDaoImplTest.deleteToDoByInvalidId()'><b>deleteToDoByInvalidId</b><br>Test class: mvc.dao.ToDoDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>mvc.dao.ToDoDaoImplTest@2d6eabae</td></tr>
+<tr>
+<td title='mvc.dao.ToDoDaoImplTest.deleteToDoBySsn()'><b>deleteToDoBySsn</b><br>Test class: mvc.dao.ToDoDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>mvc.dao.ToDoDaoImplTest@2d6eabae</td></tr>
+<tr>
+<td title='mvc.service.ToDoServiceImplTest.deleteToDoBySsn()'><b>deleteToDoBySsn</b><br>Test class: mvc.service.ToDoServiceImplTest</td>
+<td></td>
+<td>0</td>
+<td>mvc.service.ToDoServiceImplTest@67205a84</td></tr>
+<tr>
+<td title='mvc.controller.AppControllerTest.editToDo()'><b>editToDo</b><br>Test class: mvc.controller.AppControllerTest</td>
+<td></td>
+<td>0</td>
+<td>mvc.controller.AppControllerTest@64729b1e</td></tr>
+<tr>
+<td title='mvc.dao.ToDoDaoImplTest.findAllToDos()'><b>findAllToDos</b><br>Test class: mvc.dao.ToDoDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>mvc.dao.ToDoDaoImplTest@2d6eabae</td></tr>
+<tr>
+<td title='mvc.service.ToDoServiceImplTest.findAllToDos()'><b>findAllToDos</b><br>Test class: mvc.service.ToDoServiceImplTest</td>
+<td></td>
+<td>0</td>
+<td>mvc.service.ToDoServiceImplTest@67205a84</td></tr>
+<tr>
+<td title='mvc.dao.ToDoDaoImplTest.findById()'><b>findById</b><br>Test class: mvc.dao.ToDoDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>mvc.dao.ToDoDaoImplTest@2d6eabae</td></tr>
+<tr>
+<td title='mvc.service.ToDoServiceImplTest.findById()'><b>findById</b><br>Test class: mvc.service.ToDoServiceImplTest</td>
+<td></td>
+<td>0</td>
+<td>mvc.service.ToDoServiceImplTest@67205a84</td></tr>
+<tr>
+<td title='mvc.dao.ToDoDaoImplTest.findToDoById()'><b>findToDoById</b><br>Test class: mvc.dao.ToDoDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>mvc.dao.ToDoDaoImplTest@2d6eabae</td></tr>
+<tr>
+<td title='mvc.service.ToDoServiceImplTest.findToDoBySsn()'><b>findToDoBySsn</b><br>Test class: mvc.service.ToDoServiceImplTest</td>
+<td></td>
+<td>0</td>
+<td>mvc.service.ToDoServiceImplTest@67205a84</td></tr>
+<tr>
+<td title='mvc.service.ToDoServiceImplTest.isToDoSsnUnique()'><b>isToDoSsnUnique</b><br>Test class: mvc.service.ToDoServiceImplTest</td>
+<td></td>
+<td>0</td>
+<td>mvc.service.ToDoServiceImplTest@67205a84</td></tr>
+<tr>
+<td title='mvc.controller.AppControllerTest.listToDos()'><b>listToDos</b><br>Test class: mvc.controller.AppControllerTest</td>
+<td></td>
+<td>0</td>
+<td>mvc.controller.AppControllerTest@64729b1e</td></tr>
+<tr>
+<td title='mvc.controller.AppControllerTest.newToDo()'><b>newToDo</b><br>Test class: mvc.controller.AppControllerTest</td>
+<td></td>
+<td>0</td>
+<td>mvc.controller.AppControllerTest@64729b1e</td></tr>
+<tr>
+<td title='mvc.dao.ToDoDaoImplTest.saveToDo()'><b>saveToDo</b><br>Test class: mvc.dao.ToDoDaoImplTest</td>
+<td></td>
+<td>0</td>
+<td>mvc.dao.ToDoDaoImplTest@2d6eabae</td></tr>
+<tr>
+<td title='mvc.service.ToDoServiceImplTest.saveToDo()'><b>saveToDo</b><br>Test class: mvc.service.ToDoServiceImplTest</td>
+<td></td>
+<td>0</td>
+<td>mvc.service.ToDoServiceImplTest@67205a84</td></tr>
+<tr>
+<td title='mvc.controller.AppControllerTest.saveToDoWithSuccess()'><b>saveToDoWithSuccess</b><br>Test class: mvc.controller.AppControllerTest</td>
+<td></td>
+<td>0</td>
+<td>mvc.controller.AppControllerTest@64729b1e</td></tr>
+<tr>
+<td title='mvc.controller.AppControllerTest.saveToDoWithValidationError()'><b>saveToDoWithValidationError</b><br>Test class: mvc.controller.AppControllerTest</td>
+<td></td>
+<td>0</td>
+<td>mvc.controller.AppControllerTest@64729b1e</td></tr>
+<tr>
+<td title='mvc.service.ToDoServiceImplTest.updateToDo()'><b>updateToDo</b><br>Test class: mvc.service.ToDoServiceImplTest</td>
+<td></td>
+<td>0</td>
+<td>mvc.service.ToDoServiceImplTest@67205a84</td></tr>
+<tr>
+<td title='mvc.controller.AppControllerTest.updateToDoWithSuccess()'><b>updateToDoWithSuccess</b><br>Test class: mvc.controller.AppControllerTest</td>
+<td></td>
+<td>0</td>
+<td>mvc.controller.AppControllerTest@64729b1e</td></tr>
+<tr>
+<td title='mvc.controller.AppControllerTest.updateToDoWithValidationError()'><b>updateToDoWithValidationError</b><br>Test class: mvc.controller.AppControllerTest</td>
+<td></td>
+<td>0</td>
+<td>mvc.controller.AppControllerTest@64729b1e</td></tr>
+</table><p>
+</body>
+</html>

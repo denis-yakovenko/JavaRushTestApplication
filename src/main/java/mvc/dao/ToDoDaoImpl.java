@@ -22,18 +22,32 @@ public class ToDoDaoImpl extends AbstractDao<Integer, ToDo> implements ToDoDao {
 		Query query = getSession().createSQLQuery("delete from ToDo where id = :id");
 		query.setInteger("id", id);
 		query.executeUpdate();
+/*
+		ToDo toDo = getSession().get(ToDo.class,id);
+		getSession().delete(toDo);
+*/
 	}
 
 	@SuppressWarnings("unchecked")
 	public List<ToDo> findAllToDos() {
 		Criteria criteria = createEntityCriteria();
 		return (List<ToDo>) criteria.list();
+		/*CriteriaBuilder builder = getSession().getCriteriaBuilder();
+		CriteriaQuery<ToDo> criteria = builder.createQuery(ToDo.class);
+		Root<ToDo> from = criteria.from(ToDo.class);
+		CriteriaQuery<ToDo> select = criteria.select(from);
+		TypedQuery<ToDo> typedQuery = getSession().createQuery(select);
+		return typedQuery.getResultList();*/
+
 	}
 
 	public ToDo findToDoById(int id) {
 		Criteria criteria = createEntityCriteria();
 		criteria.add(Restrictions.eq("id", id));
 		return (ToDo) criteria.uniqueResult();
+/*
+		return getSession().get(ToDo.class,id);
+*/
 	}
 
 	public void doneToDoById(int id) {

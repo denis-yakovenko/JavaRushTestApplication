@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="21" passed="21">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="33565" started-at="2016-11-22T12:54:48Z" finished-at="2016-11-22T12:55:22Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="33565" started-at="2016-11-22T12:54:48Z" finished-at="2016-11-22T12:55:22Z">
+      <class name="mvc.service.ToDoServiceImplTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:mvc.service.ToDoServiceImplTest@67205a84]" name="setUp" is-config="true" duration-ms="8" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="deleteToDoBySsn()[pri:0, instance:mvc.service.ToDoServiceImplTest@67205a84]" name="deleteToDoBySsn" duration-ms="0" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteToDoBySsn -->
+        <test-method status="PASS" signature="findById()[pri:0, instance:mvc.service.ToDoServiceImplTest@67205a84]" name="findById" duration-ms="0" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findById -->
+        <test-method status="PASS" signature="findAllToDos()[pri:0, instance:mvc.service.ToDoServiceImplTest@67205a84]" name="findAllToDos" duration-ms="0" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAllToDos -->
+        <test-method status="PASS" signature="findToDoBySsn()[pri:0, instance:mvc.service.ToDoServiceImplTest@67205a84]" name="findToDoBySsn" duration-ms="0" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findToDoBySsn -->
+        <test-method status="PASS" signature="isToDoSsnUnique()[pri:0, instance:mvc.service.ToDoServiceImplTest@67205a84]" name="isToDoSsnUnique" duration-ms="0" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isToDoSsnUnique -->
+        <test-method status="PASS" signature="saveToDo()[pri:0, instance:mvc.service.ToDoServiceImplTest@67205a84]" name="saveToDo" duration-ms="0" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveToDo -->
+        <test-method status="PASS" signature="updateToDo()[pri:0, instance:mvc.service.ToDoServiceImplTest@67205a84]" name="updateToDo" duration-ms="0" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateToDo -->
+      </class> <!-- mvc.service.ToDoServiceImplTest -->
+      <class name="mvc.controller.AppControllerTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:mvc.controller.AppControllerTest@64729b1e]" name="setUp" is-config="true" duration-ms="3204" started-at="2016-11-22T14:54:48Z" finished-at="2016-11-22T14:54:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="deleteToDo()[pri:0, instance:mvc.controller.AppControllerTest@64729b1e]" name="deleteToDo" duration-ms="161" started-at="2016-11-22T14:54:52Z" finished-at="2016-11-22T14:54:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteToDo -->
+        <test-method status="PASS" signature="editToDo()[pri:0, instance:mvc.controller.AppControllerTest@64729b1e]" name="editToDo" duration-ms="28" started-at="2016-11-22T14:54:52Z" finished-at="2016-11-22T14:54:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editToDo -->
+        <test-method status="PASS" signature="listToDos()[pri:0, instance:mvc.controller.AppControllerTest@64729b1e]" name="listToDos" duration-ms="9" started-at="2016-11-22T14:54:52Z" finished-at="2016-11-22T14:54:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listToDos -->
+        <test-method status="PASS" signature="newToDo()[pri:0, instance:mvc.controller.AppControllerTest@64729b1e]" name="newToDo" duration-ms="0" started-at="2016-11-22T14:54:52Z" finished-at="2016-11-22T14:54:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newToDo -->
+        <test-method status="PASS" signature="saveToDoWithSuccess()[pri:0, instance:mvc.controller.AppControllerTest@64729b1e]" name="saveToDoWithSuccess" duration-ms="0" started-at="2016-11-22T14:54:52Z" finished-at="2016-11-22T14:54:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveToDoWithSuccess -->
+        <test-method status="PASS" signature="saveToDoWithValidationError()[pri:0, instance:mvc.controller.AppControllerTest@64729b1e]" name="saveToDoWithValidationError" duration-ms="1" started-at="2016-11-22T14:54:52Z" finished-at="2016-11-22T14:54:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveToDoWithValidationError -->
+        <test-method status="PASS" signature="updateToDoWithSuccess()[pri:0, instance:mvc.controller.AppControllerTest@64729b1e]" name="updateToDoWithSuccess" duration-ms="1" started-at="2016-11-22T14:54:52Z" finished-at="2016-11-22T14:54:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateToDoWithSuccess -->
+        <test-method status="PASS" signature="updateToDoWithValidationError()[pri:0, instance:mvc.controller.AppControllerTest@64729b1e]" name="updateToDoWithValidationError" duration-ms="0" started-at="2016-11-22T14:54:52Z" finished-at="2016-11-22T14:54:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateToDoWithValidationError -->
+      </class> <!-- mvc.controller.AppControllerTest -->
+      <class name="mvc.dao.ToDoDaoImplTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:mvc.dao.ToDoDaoImplTest@2d6eabae]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="1" started-at="2016-11-22T14:54:52Z" finished-at="2016-11-22T14:54:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:mvc.dao.ToDoDaoImplTest@2d6eabae]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="27693" started-at="2016-11-22T14:54:52Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2016-11-22T14:55:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:mvc.dao.ToDoDaoImplTest@2d6eabae]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="443" started-at="2016-11-22T14:55:20Z" finished-at="2016-11-22T14:55:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void mvc.dao.ToDoDaoImplTest.deleteToDoByInvalidId()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:mvc.dao.ToDoDaoImplTest@2d6eabae]" name="setUp" is-config="true" duration-ms="1279" started-at="2016-11-22T14:55:20Z" finished-at="2016-11-22T14:55:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="deleteToDoByInvalidId()[pri:0, instance:mvc.dao.ToDoDaoImplTest@2d6eabae]" name="deleteToDoByInvalidId" duration-ms="389" started-at="2016-11-22T14:55:21Z" finished-at="2016-11-22T14:55:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteToDoByInvalidId -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:mvc.dao.ToDoDaoImplTest@2d6eabae]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="8" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void mvc.dao.ToDoDaoImplTest.deleteToDoByInvalidId()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:mvc.dao.ToDoDaoImplTest@2d6eabae]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="74" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void mvc.dao.ToDoDaoImplTest.deleteToDoBySsn()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:mvc.dao.ToDoDaoImplTest@2d6eabae]" name="setUp" is-config="true" duration-ms="15" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="deleteToDoBySsn()[pri:0, instance:mvc.dao.ToDoDaoImplTest@2d6eabae]" name="deleteToDoBySsn" duration-ms="3" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteToDoBySsn -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:mvc.dao.ToDoDaoImplTest@2d6eabae]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="3" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void mvc.dao.ToDoDaoImplTest.deleteToDoBySsn()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:mvc.dao.ToDoDaoImplTest@2d6eabae]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="4" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void mvc.dao.ToDoDaoImplTest.findAllToDos()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:mvc.dao.ToDoDaoImplTest@2d6eabae]" name="setUp" is-config="true" duration-ms="17" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="findAllToDos()[pri:0, instance:mvc.dao.ToDoDaoImplTest@2d6eabae]" name="findAllToDos" duration-ms="3" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAllToDos -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:mvc.dao.ToDoDaoImplTest@2d6eabae]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="2" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void mvc.dao.ToDoDaoImplTest.findAllToDos()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:mvc.dao.ToDoDaoImplTest@2d6eabae]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="8" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void mvc.dao.ToDoDaoImplTest.findById()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:mvc.dao.ToDoDaoImplTest@2d6eabae]" name="setUp" is-config="true" duration-ms="15" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="findById()[pri:0, instance:mvc.dao.ToDoDaoImplTest@2d6eabae]" name="findById" duration-ms="24" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findById -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:mvc.dao.ToDoDaoImplTest@2d6eabae]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void mvc.dao.ToDoDaoImplTest.findById()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:mvc.dao.ToDoDaoImplTest@2d6eabae]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="4" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void mvc.dao.ToDoDaoImplTest.findToDoById()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:mvc.dao.ToDoDaoImplTest@2d6eabae]" name="setUp" is-config="true" duration-ms="10" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="findToDoById()[pri:0, instance:mvc.dao.ToDoDaoImplTest@2d6eabae]" name="findToDoById" duration-ms="70" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findToDoById -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:mvc.dao.ToDoDaoImplTest@2d6eabae]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="5" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void mvc.dao.ToDoDaoImplTest.findToDoById()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:mvc.dao.ToDoDaoImplTest@2d6eabae]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="4" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void mvc.dao.ToDoDaoImplTest.saveToDo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:mvc.dao.ToDoDaoImplTest@2d6eabae]" name="setUp" is-config="true" duration-ms="17" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="saveToDo()[pri:0, instance:mvc.dao.ToDoDaoImplTest@2d6eabae]" name="saveToDo" duration-ms="26" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveToDo -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:mvc.dao.ToDoDaoImplTest@2d6eabae]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="2" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void mvc.dao.ToDoDaoImplTest.saveToDo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:mvc.dao.ToDoDaoImplTest@2d6eabae]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2016-11-22T14:55:22Z" finished-at="2016-11-22T14:55:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- mvc.dao.ToDoDaoImplTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
